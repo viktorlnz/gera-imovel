@@ -200,7 +200,7 @@ const geraDataAleatoria = () => {
     const ano = Math.round(Math.random() * 2) + 2017; //Trabalhando com os anos 2017-2019
     const mes = Math.floor(Math.random() *12);
     const limitesDeDias = mes == 2 ? 28 : 30 //Fevereiro que nos trolle
-    const dia = Math.floor(Math.random() * 28);
+    const dia = Math.floor(Math.random() * limitesDeDias);
     
     return ano+'-'+mes+'-'+dia;
 }
